@@ -45,7 +45,7 @@ section .text
 	syscall
 %endmacro
 
-# Affichage du tableau de sortie, Fonction a appeler q'une seule fois, car contient des labels
+; Affichage de la table de sortie, Fonction à appeler une seule fois, car elle contient des labels
 %macro print_out 0 ; modifie rax, rcx, rdi, rsi, rdx, r14, r9, r15
 	mov r15, 0
 	.loop:
